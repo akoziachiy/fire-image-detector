@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+	<div th:if="${message}">
+		<h2 th:text="${message}"/>
+	</div>
+
+	<div>
+		<ul>
+			<li th:each="result : ${results}">
+				<a th:text="${result}" />
+			</li>
+		</ul>
+	</div>
+
+	<div>
+		<a href="/">HOME</a>
+	</div>
+
+</body>
+</html>
